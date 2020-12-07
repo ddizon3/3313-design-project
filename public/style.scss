@@ -1,0 +1,126 @@
+//Composition
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+p {
+    font-size: 15px;
+    color: hsl(0,0,10);
+}
+
+input {
+    padding: 5px 5px;
+}
+
+//Utility
+.box {
+    background-color: #FFF;
+    padding: 20px 50px;
+    border-radius: 5px;
+}
+
+.title {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.button {
+    background-color: hsl(0,0,10);
+    padding: 20px;
+    color: #FFF;
+    cursor: pointer;
+    align-self: center;
+    border-radius: 5px;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.mr-20 {
+    margin-right: 20px;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.italic {
+    font-style: italic;
+}
+
+
+//Blocks
+#home {
+    background-color: #f2dcbb;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    .box {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+}
+
+#chat {
+    background-color: #f2dcbb;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .title {
+        font-family: 'Righteous', cursive;
+        color: rgba(255,255,255,0.7);
+        letter-spacing: 0.2em;
+        font-size: 80px;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+    .box {
+        width: 80vw;
+        height: 60vh;
+        overflow-y: scroll;
+        display: flex;
+        flex-direction: column;
+        #messages {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            li {
+                padding: 5px 10px;
+            }
+        }
+    }
+    form {
+        position: absolute;
+        bottom: 0;
+        width: calc(80vw + 100px);
+        margin-bottom: 20px;
+        .flex-row {
+            justify-content: space-between;
+            input {
+                padding: 10px;
+                width: 85%;
+                border-radius: 5px;
+            }
+            button {
+                all: unset;
+                background-color: hsl(0,0,10);
+                padding: 20px 40px;
+                color: #FFF;
+                cursor: pointer;
+                align-self: center;
+                border-radius: 5px;
+            }
+        }
+    }
+}
+
+//Exception

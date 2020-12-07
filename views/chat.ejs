@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Public Chat Room</title>
+    <link href= "/public/style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <script>
+      const room = "<%= room %>"
+    </script>
+    <script src="../../socket.io/socket.io.js"></script>
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+  </head>
+  <body>
+    <div id="chat">
+      <p class="title">CHATROOM</p>
+      <div class="box">
+        <ul id="messages"></ul>
+      </div>
+      <form action="/" method="POST" autocomplete="off" autofocus="on" id="chatForm">
+        <div class="flex-row">
+          <input id="userInput"  placeholder="Enter message here" />
+          <button id="button">Send</button>
+        </div>
+      </form>
+    </div>
+
+    <script src="/public/script.js"></script>
+  </body>
+</html>

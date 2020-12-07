@@ -1,0 +1,173 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+
+p {
+  font-size: 15px;
+  color: #1a1a1a;
+}
+
+input {
+  padding: 5px 5px;
+}
+
+.box {
+  background-color: #FFF;
+  padding: 20px 50px;
+  border-radius: 5px;
+}
+
+.title {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.button {
+  background-color: #1a1a1a;
+  padding: 20px;
+  color: #FFF;
+  cursor: pointer;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  border-radius: 5px;
+}
+
+.flex-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.mr-20 {
+  margin-right: 20px;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.italic {
+  font-style: italic;
+}
+
+#home {
+  background-color: #f2dcbb;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#home .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#chat {
+  background-color: #f2dcbb;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#chat .title {
+  font-family: 'Righteous', cursive;
+  color: rgba(255, 255, 255, 0.7);
+  letter-spacing: 0.2em;
+  font-size: 80px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+#chat .box {
+  width: 80vw;
+  height: 60vh;
+  overflow-y: scroll;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#chat .box #messages {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#chat .box #messages li {
+  padding: 5px 10px;
+}
+
+#chat form {
+  position: absolute;
+  bottom: 0;
+  width: calc(80vw + 100px);
+  margin-bottom: 20px;
+}
+
+#chat form .flex-row {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#chat form .flex-row input {
+  padding: 10px;
+  width: 85%;
+  border-radius: 5px;
+}
+
+#chat form .flex-row button {
+  all: unset;
+  background-color: #1a1a1a;
+  padding: 20px 40px;
+  color: #FFF;
+  cursor: pointer;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  border-radius: 5px;
+}
+/*# sourceMappingURL=style.css.map */

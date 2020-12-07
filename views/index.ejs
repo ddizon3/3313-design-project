@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Chatroom Join Screen</title>
+    <link href= "/public/style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap" rel="stylesheet" />
+  </head>
+
+   <body>
+    <div id="home">
+      <div class="box">
+        <p class="title">Which chatroom would you like to join?</p>
+        <div class="flex-row">
+            <label class="mr-20">Chatroom Name: </label>
+            <input type="text" id="text"></input>
+        </div>
+        <p class="button" onclick="joinChatroom(document.getElementById('text').value)">Join Chat Room</p>
+      </div> 
+    </div>
+    <script src="public/index.js"></script>
+   </body>
+</html>
